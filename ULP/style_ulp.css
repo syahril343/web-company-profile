@@ -1,0 +1,1731 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --primary-color : rgb(49, 135, 168);
+    --secondary-color :whitesmoke;
+    --thread-color : rgb(25, 95, 122);
+}
+
+
+nav {
+    background: linear-gradient(135deg, rgb(25, 95, 122), rgb(75, 175, 214));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 6rem;
+}
+
+header {
+    padding: 20px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 340px;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li:hover {
+    background-color: var(--thread-color);
+
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.sosmed-nav {
+    display: flex;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.sosmed-nav i {
+    margin: 0 9px;
+    cursor: pointer;
+    transition: .2s;
+    color:  var(--secondary-color);
+}
+
+.sosmed-nav i:hover {
+    color: var(--primary-color);
+}
+
+
+.dropdown .btn i {
+    margin-left: 0.4rem;
+    z-index: 2;
+}
+
+
+.dropbtn {
+    background-color: var(--secondary-color);
+    color: var(--thread-color);
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: rgb(220, 218, 224)}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: var(--thread-color); color: whitesmoke;}
+
+
+
+  .hamburger {
+    font-size: 30px;
+    color: var(--thread-color);
+    display: none;
+}
+
+
+.list__iconMenu {
+    background-color: white;
+    position: fixed;
+    min-width: 100%;
+    text-align: center;
+    z-index: 2;
+    display: none;
+} 
+
+.active.list__iconMenu {
+    display: block;
+}
+
+.list__iconMenu i {
+    margin-left: 0.5rem;
+}
+
+.list__iconMenu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.list__iconMenu .list_UP3 a {
+    font-size: 16px;
+}
+
+.list__iconMenu .list_UP3 {
+    display: none;
+}
+
+.dropdown-UP3 {
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--thread-color);
+}
+
+.list_UP3 {
+    display: none;
+}
+
+.active.list_UP3 {
+    display: block;
+}
+
+
+
+.list__iconMenu .list_ULP a {
+    font-size: 16px;
+}
+
+.list__iconMenu .list_ULP {
+    display: none;
+}
+
+.dropdown-ULP {
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--thread-color);
+}
+
+.list_ULP {
+    display: none;
+}
+
+.active.list_ULP {
+    display: block;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 90.2%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .list__iconMenu {
+        max-width: 100%;
+    }
+
+    .list__iconMenu .list_UP3 a {
+        font-size: 14px;
+    }
+
+    .list__iconMenu .list_ULP a {
+        font-size: 14px;
+    }
+
+    header .logo {
+        margin-left: -5rem;
+    }
+
+    header .logo img {
+        width: 280px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        transform: translate(20rem, -110%);
+    }
+}
+
+
+
+
+/*===========================================================================================================*/
+/************************************************* INDRAPURA *************************************************/
+/*===========================================================================================================*/
+
+/*=========== HERO ============*/
+.hero-indrapura {
+    text-align: center;
+    background: url('../asset/img44.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-indrapura h1 {
+    color: var(--thread-color);
+    position: relative;
+    top: 50%;
+    font-size: 6rem;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.hero-indrapura .text-hero {
+    position: relative;
+    padding: 15rem;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-indrapura .text-hero h1 {
+    font-size: 9em;
+    margin-top: -8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins;
+    background-image: url(../asset/bg0.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+/*=========== FINISH ============*/
+
+/*=========== PROFILE ============*/
+
+.profile-indrapura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-indrapura img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-indrapura div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.profile-indrapura div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-indrapura div p {
+    font-size: 16px;
+}
+
+.profile-indrapura div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-indrapura div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*=========== Selesai ============*/
+
+/*=========== FOTO ANGGOTA ============*/
+
+.box-perencanaan-indrapura {
+    padding: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-perencanaan-indrapura img {
+    width: 18rem;
+    border-radius: 40px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+
+.box-perencanaan-indrapura img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.box-perencanaan-indrapura h5 {
+    margin: 1rem;
+    color: var(--thread-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+/*=========== Selesai ============*/
+
+/*=========== LINK ============*/
+.link__indrapura {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__indrapura h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__indrapura h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__indrapura a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .hero-indrapura h1{
+        font-size: 3.2rem;
+        transform: translateY(50%);
+    }
+
+    .hero-indrapura {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    
+    .profile-indrapura {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-indrapura img {
+        width: 12em;
+    }
+
+    .profile-indrapura div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-indrapura div p {
+        font-size: 18px;
+    }
+
+    .profile-indrapura div h4 {
+        text-align: center;
+    }
+
+    .box-perencanaan-indrapura {
+        display: grid;
+    }
+
+    .box-perencanaan-indrapura img {
+        width: 90%;
+    }
+}
+
+
+/*============================================= INDRAPURA (FINISH) =============================================*/
+
+
+
+/*===========================================================================================================*/
+/************************************************* KENJERAN *************************************************/
+/*===========================================================================================================*/
+
+/*=========== HERO ============*/
+.hero-kenjeran {
+    text-align: center;
+    background: url('../asset/img44.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-kenjeran h1 {
+    color: var(--thread-color);
+    position: relative;
+    top: 50%;
+    font-size: 6rem;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.hero-kenjeran .text-hero {
+    position: relative;
+    padding: 15rem;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-kenjeran .text-hero h1 {
+    font-size: 9em;
+    margin-top: -8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins;
+    background-image: url(../asset/bg0.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+/*=========== FINISH ============*/
+
+/*=========== PROFILE ============*/
+
+.profile-kenjeran {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-kenjeran img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-kenjeran div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.profile-kenjeran div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-kenjeran div p {
+    font-size: 16px;
+}
+
+.profile-kenjeran div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-kenjeran div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*=========== Selesai ============*/
+
+/*=========== FOTO ANGGOTA ============*/
+
+.box-perencanaan-kenjeran {
+    padding: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-perencanaan-kenjeran img {
+    width: 18rem;
+    border-radius: 40px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+
+.box-perencanaan-kenjeran img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.box-perencanaan-kenjeran h5 {
+    margin: 1rem;
+    color: var(--thread-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+/*=========== Selesai ============*/
+
+/*=========== LINK ============*/
+.link__kenjeran {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__kenjeran h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__kenjeran h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__kenjeran a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .hero-kenjeran h1{
+        font-size: 3.2rem;
+        transform: translateY(50%);
+    }
+
+    .hero-kenjeran {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    .hero-kenjeran h1{
+        font-size: 3.2rem;
+        transform: translateY(50%);
+    }
+
+    .hero-kenjeran {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    
+    .profile-kenjeran {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-kenjeran img {
+        width: 12em;
+    }
+
+    .profile-kenjeran div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-kenjeran div p {
+        font-size: 18px;
+    }
+
+    .profile-kenjeran div h4 {
+        text-align: center;
+    }
+
+    .box-perencanaan-kenjeran {
+        display: grid;
+    }
+
+    .box-perencanaan-kenjeran img {
+        width: 90%;
+    }
+}
+
+
+
+/*============================================= KENJERAN (FINISH) =============================================*/
+
+
+/*===========================================================================================================*/
+/************************************************* PLOSO *************************************************/
+/*===========================================================================================================*/
+
+/*=========== HERO ============*/
+.hero-ploso {
+    text-align: center;
+    background: url('../asset/img44.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-ploso h1 {
+    color: var(--thread-color);
+    position: relative;
+    top: 50%;
+    font-size: 6rem;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.hero-ploso .text-hero {
+    position: relative;
+    padding: 15rem;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-ploso .text-hero h1 {
+    font-size: 9em;
+    margin-top: -8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins;
+    background-image: url(../asset/bg0.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+/*=========== FINISH ============*/
+
+/*=========== PROFILE ============*/
+
+.profile-ploso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-ploso img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-ploso div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.profile-ploso div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-ploso div p {
+    font-size: 16px;
+}
+
+.profile-ploso div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-ploso div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*=========== Selesai ============*/
+
+/*=========== FOTO ANGGOTA ============*/
+
+.box-perencanaan-ploso {
+    padding: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-perencanaan-ploso img {
+    width: 18rem;
+    border-radius: 40px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+
+.box-perencanaan-ploso img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.box-perencanaan-ploso h5 {
+    margin: 1rem;
+    color: var(--thread-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+/*=========== Selesai ============*/
+
+/*=========== LINK ============*/
+.link__ploso {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__ploso h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__ploso h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__ploso a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .hero-ploso h1{
+        font-size: 3.2rem;
+        transform: translateY(50%);
+    }
+
+    .hero-ploso {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    .hero-ploso h1{
+        font-size: 3.2rem;
+        transform: translateY(50%);
+    }
+
+    .hero-ploso {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    
+    .profile-ploso {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-ploso img {
+        width: 12em;
+    }
+
+    .profile-ploso div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-ploso div p {
+        font-size: 18px;
+    }
+
+    .profile-ploso div h4 {
+        text-align: center;
+    }
+
+    .box-perencanaan-ploso {
+        display: grid;
+    }
+
+    .box-ploso img {
+        width: 90%;
+    }
+}
+
+
+
+/*============================================= PLOSO (FINISH) =============================================*/
+
+
+/*===========================================================================================================*/
+/************************************************* PERAK *************************************************/
+/*===========================================================================================================*/
+
+/*=========== HERO ============*/
+.hero-perak {
+    text-align: center;
+    background: url('../asset/img44.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-perak h1 {
+    color: var(--thread-color);
+    position: relative;
+    top: 50%;
+    font-size: 6rem;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.hero-perak .text-hero {
+    position: relative;
+    padding: 15rem;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-perak .text-hero h1 {
+    font-size: 9em;
+    margin-top: -8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins;
+    background-image: url(../asset/bg0.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+/*=========== FINISH ============*/
+
+/*=========== PROFILE ============*/
+
+.profile-perak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-perak img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-perak div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.profile-perak div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-perak div p {
+    font-size: 16px;
+}
+
+.profile-perak div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-perak div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*=========== Selesai ============*/
+
+/*=========== FOTO ANGGOTA ============*/
+
+.box-perencanaan-perak {
+    padding: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-perencanaan-perak img {
+    width: 18rem;
+    border-radius: 40px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+
+.box-perencanaan-perak img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.box-perencanaan-perak h5 {
+    margin: 1rem;
+    color: var(--thread-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+/*=========== Selesai ============*/
+
+/*=========== LINK ============*/
+.link__perak {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__perak h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__perak h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__perak a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .hero-perak h1{
+        font-size: 3.2rem;
+        transform: translateY(50%);
+    }
+
+    .hero-perak {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    .profile-perak  {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-perak  img {
+        width: 12em;
+    }
+
+    .profile-perak  div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-perak  div p {
+        font-size: 18px;
+    }
+
+    .profile-perak  div h4 {
+        text-align: center;
+    }
+
+    .box-perencanaan-perak  {
+        display: grid;
+    }
+
+    .box-perencanaan-perak  img {
+        width: 90%;
+    }
+}
+
+/*============================================= PERAK (FINISH) =============================================*/
+
+
+/*===========================================================================================================*/
+/************************************************* TANDES *************************************************/
+/*===========================================================================================================*/
+
+/*=========== HERO ============*/
+.hero-tandes {
+    text-align: center;
+    background: url('../asset/img44.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-tandes h1 {
+    color: var(--thread-color);
+    position: relative;
+    top: 50%;
+    font-size: 6rem;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.hero-tandes .text-hero {
+    position: relative;
+    padding: 15rem;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-tandes .text-hero h1 {
+    font-size: 9em;
+    margin-top: -8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins;
+    background-image: url(../asset/bg0.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+/*=========== FINISH ============*/
+
+/*=========== PROFILE ============*/
+
+.profile-tandes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-tandes img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-tandes div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.profile-tandes div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-tandes div p {
+    font-size: 16px;
+}
+
+.profile-tandes div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-tandes div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*=========== Selesai ============*/
+
+/*=========== FOTO ANGGOTA ============*/
+
+.box-perencanaan-tandes {
+    padding: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-perencanaan-tandes img {
+    width: 18rem;
+    border-radius: 40px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+
+.box-perencanaan-tandes img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.box-perencanaan-tandes h5 {
+    margin: 1rem;
+    color: var(--thread-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+/*=========== Selesai ============*/
+
+/*=========== LINK ============*/
+.link__tandes {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__tandes h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__tandes h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__tandes a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .hero-tandes h1{
+        font-size: 3.2rem;
+        transform: translateY(50%);
+    }
+
+    .hero-tandes {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    .profile-tandes  {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-tandes  img {
+        width: 12em;
+    }
+
+    .profile-tandes  div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-tandes  div p {
+        font-size: 18px;
+    }
+
+    .profile-tandes  div h4 {
+        text-align: center;
+    }
+
+    .box-perencanaan-tandes  {
+        display: grid;
+    }
+
+    .box-perencanaan-tandes  img {
+        width: 90%;
+    }
+}
+
+/*============================================= TANDES (FINISH) =============================================*/
+
+
+/*===========================================================================================================*/
+/************************************************* EMBONG WUNGU *************************************************/
+/*===========================================================================================================*/
+
+/*=========== HERO ============*/
+.hero-embongWungu {
+    text-align: center;
+    background: url('../asset/img44.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-embongWungu h1 {
+    color: var(--thread-color);
+    position: relative;
+    top: 50%;
+    font-size: 6rem;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.hero-embongWungu .text-hero {
+    position: relative;
+    padding: 15rem;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-embongWungu .text-hero h1 {
+    font-size: 9em;
+    margin-top: -8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins;
+    background-image: url(../asset/bg0.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+/*=========== FINISH ============*/
+
+/*=========== PROFILE ============*/
+
+.profile-embongWungu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-embongWungu img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-embongWungu div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.profile-embongWungu div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-embongWungu div p {
+    font-size: 16px;
+}
+
+.profile-embongWungu div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-embongWungu div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*=========== Selesai ============*/
+
+/*=========== FOTO ANGGOTA ============*/
+
+.box-perencanaan-embongWungu {
+    padding: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-perencanaan-embongWungu img {
+    width: 18rem;
+    border-radius: 40px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+
+.box-perencanaan-embongWungu img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.box-perencanaan-embongWungu h5 {
+    margin: 1rem;
+    color: var(--thread-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+/*=========== Selesai ============*/
+
+/*=========== LINK ============*/
+.link__embongWungu {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__embongWungu h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__embongWungu h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__embongWungu a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .hero-embongWungu h1{
+        font-size: 3.2rem;
+    }
+
+    .hero-embongWungu {
+        position: relative;
+        margin-top: -10rem;
+    }
+
+    .profile-embongWungu {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-embongWungu  img {
+        width: 12em;
+    }
+
+    .profile-embongWungu  div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-embongWungu  div p {
+        font-size: 18px;
+    }
+
+    .profile-embongWungu  div h4 {
+        text-align: center;
+    }
+
+    .box-perencanaan-embongWungu  {
+        display: grid;
+    }
+
+    .box-perencanaan-embongWungu  img {
+        width: 90%;
+    }
+}
+
+/*============================================= EMBONG WUNGU (FINISH) =============================================*/
+
+
+
+
+
+
+
+
+/********************************* FOOTER ****************************************/
+/********************************* FOOTER ****************************************/
+/********************************* FOOTER ****************************************/
+
+footer {
+    padding: 3rem;
+    background: linear-gradient(135deg, rgb(75, 175, 214), rgb(25, 95, 122));
+}
+
+footer .content1 h3 {
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform: translateX(25%);
+    width: 50%;
+    padding: 4px 20px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+footer .content1 {
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .child {
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+}
+
+footer .icon-sitemap {
+    margin-right: 0.7rem;
+}
+
+footer .list-sitemap li i {
+    margin-right: 0.5rem;
+}
+
+footer .icon-sitemap div {
+    margin-top: 1.25rem;
+}
+
+footer .list-sitemap {
+    list-style: none; 
+}
+
+footer .list-sitemap li {
+    margin-top: 1.21rem;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+footer .sosmed-follow {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+footer .sosmed-follow i {
+    font-size: 25px;
+    color: yellow;
+}
+
+footer .content2 h4 {
+    font-family: Poppins;
+    color: whitesmoke;
+    margin-top: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+footer .content2 {
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content2 h3 {
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 4rem;
+    width: 36.3%;
+    padding: 4px 10px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+.cs-me {
+    padding: 2rem;
+    text-align: center;
+    background-color: violet;
+    color: whitesmoke;
+    height: max-content;
+    margin-top: 3rem;
+    background-color: var(--thread-color);
+    border-radius: 0 30%;
+}
+
+.cs-me h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.1rem;
+}
+
+.cs-me span {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: yellow;
+}
+
+
+@media screen and (max-width: 480px) {
+    .cs-me {
+        position: absolute;
+        transform: translate(50%, 160%);
+        height: 14px;
+    }
+
+    .cs-me h1 {
+        font-size: 12px;
+        display: flex;
+        margin-top: -1.3rem;
+    }
+
+    .cs-me span {
+        font-size: 14px;
+    }
+
+    footer .list-sitemap li {
+        font-size: 7px;
+    }
+
+    footer .content1 h3 {
+        font-size: 9px;
+    }
+
+    footer .content2 h3 {
+        font-size: 9px;
+        margin-left: 2rem;
+    }
+
+    footer .content2 h4 {
+        font-size: 8px;
+    }
+
+    footer .sosmed-follow i {
+        font-size: 18px;
+    }
+
+}

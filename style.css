@@ -1,0 +1,1257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color : rgb(49, 135, 168);
+    --secondary-color :whitesmoke;
+    --thread-color : rgb(25, 95, 122);
+    --gradient-blue : rgb(75, 175, 214);
+}
+
+
+nav {
+    background: linear-gradient(135deg, rgb(25, 95, 122), rgb(75, 175, 214));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 6rem;
+}
+
+header {
+    padding: 20px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 340px;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li:hover {
+    background-color: var(--thread-color);
+
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.sosmed-nav {
+    display: flex;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.sosmed-nav i {
+    margin: 0 9px;
+    cursor: pointer;
+    transition: .1s;
+    color:  var(--secondary-color);
+}
+
+.sosmed-nav i:hover {
+    color: var(--primary-color);
+}
+
+
+.dropdown .btn i {
+    margin-left: 0.4rem;
+    z-index: 2;
+}
+
+.dropbtn {
+    background-color: var(--secondary-color);
+    color: var(--thread-color);
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(220, 218, 224)}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: var(--thread-color); color: whitesmoke;}
+
+
+.hamburger {
+    font-size: 30px;
+    color: var(--thread-color);
+    display: none;
+}
+
+
+.list__iconMenu {
+    background-color: white;
+    position: fixed;
+    min-width: 100%;
+    text-align: center;
+    z-index: 2;
+    display: none;
+} 
+
+.active.list__iconMenu {
+    display: block;
+}
+
+.list__iconMenu i {
+    margin-left: 0.5rem;
+}
+
+.list__iconMenu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.list__iconMenu .list_UP3 a {
+    font-size: 16px;
+}
+
+.list__iconMenu .list_UP3 {
+    display: none;
+}
+
+.dropdown-UP3 {
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--thread-color);
+}
+
+.list_UP3 {
+    display: none;
+}
+
+.active.list_UP3 {
+    display: block;
+}
+
+
+
+.list__iconMenu .list_ULP a {
+    font-size: 16px;
+}
+
+.list__iconMenu .list_ULP {
+    display: none;
+}
+
+.dropdown-ULP {
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--thread-color);
+}
+
+.list_ULP {
+    display: none;
+}
+
+.active.list_ULP {
+    display: block;
+}
+
+
+
+/*********************************HERO-START*******************************************************************/
+
+.hero .carousel-inner {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100vh;
+}
+
+.text-hero {
+    position: absolute;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    top: 13rem;
+    z-index: 1;
+    transform: translateX(25%);
+}
+
+.text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.btn-hero {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 3rem;
+    
+}
+
+.tbl {
+    margin: 0.5rem;
+}
+
+.tbl h3 {
+    padding: 3px 16px;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.tbl a {
+    text-decoration: none;
+}
+
+.tbl .more {
+    background-color: none;
+    color: white;
+    border: 1.2px solid var(--secondary-color);
+    transition: .1s;
+    border-radius: 6px;
+    font-size: 1.5rem;
+}
+
+.tbl .more:hover {
+    background-color:  var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.tbl .about {
+    background-color:  var(--primary-color);
+    border: 1.2px solid  var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    font-size: 1.5rem;
+    transition: .2s;
+}
+
+.tbl .about:hover {
+    background-color: rgba(49, 134, 168, 0.863);
+}
+
+
+/********************************************************* FINISH *******************************************************************/
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+    -webkit-transform: scaleX(-1);
+    
+}
+
+.profile div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile div p {
+    font-size: 16px;
+}
+
+.profile div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*==================== FOTO ANGGOTA ==========================*/
+.grid-home {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+    position: relative;
+}
+.grid-home .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-home .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-home .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-home .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+/*==================== SELESAI ==========================*/
+
+
+.wilker {
+    display: block;
+    margin-top: 10rem;
+    align-items: center;
+    text-align: center;
+}
+
+.wilker h1 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--thread-color);
+    text-align: center;
+    font-family: Poppins;
+}
+
+.wilker img {
+    width: 70em;
+    text-align: center;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.line {
+    margin-top: 10rem;
+    height: 4px;
+    width: auto;
+    z-index: -1;
+    position: relative;
+    background-color: var(--thread-color);
+}
+
+.content-yt {
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.text-media {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Poppins;
+    color: var(--thread-color);
+    margin-left: 6.6rem;
+}
+
+.content-yt div {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-yt div .text {
+    padding: 5rem;
+    color: var(--thread-color);
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+}
+
+.content-yt div .text h1 {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Poppins;
+}
+
+.content-yt div .text p {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+
+
+/*PAGE KINERJA SBU////////////*/
+/*======= HERO ===========*/
+.hero-kinerja {
+    padding: 20px;
+    background: linear-gradient(rgb(25, 95, 122), rgb(75, 175, 214));
+    width: auto;
+    height: 95vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-kinerja .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.hero-kinerja .item h1 {
+    text-align: end;
+    font-size: 8rem;
+    font-family: Poppins;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: whitesmoke;
+    margin-top: 5rem;
+    z-index: 1;
+    margin-top: 10rem;
+}
+
+.hero-kinerja .item img {
+    width: 500px;
+    height: 330px;
+    margin-top: 10rem;
+}
+
+/*======= HERO FINISH ===========*/
+
+
+.hero-kinerja .item .publikasi {
+    width: 700px;
+    margin-left: 6rem;
+}
+
+
+/*PAGE PUBLIKASI SBU////////////*/
+/*======= HERO ===========*/
+.hero-publikasi {
+    padding: 20px;
+    background: linear-gradient(rgb(25, 95, 122), rgb(75, 175, 214));
+    width: auto;
+    height: 95vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-publikasi .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.hero-publikasi .item h1 {
+    text-align: end;
+    font-size: 8rem;
+    font-family: Poppins;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: whitesmoke;
+    margin-top: 5rem;
+    z-index: 1;
+    margin-top: 10rem;
+}
+
+.hero-publikasi .item img {
+    width: 500px;
+    height: 330px;
+    margin-top: 10rem;
+}
+
+/*======= HERO FINISH ===========*/
+
+.pubilkasi-nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    margin-top: 3rem;
+}
+
+.pubilkasi-nav .item {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pubilkasi-nav .item:hover {
+    scale: 1.03;
+    box-shadow: 3px 5px 10px rgba(128, 128, 128, 0.5);
+
+}
+
+.pubilkasi-nav h2 {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--thread-color);
+    font-family: Poppins;
+    margin-top: -2rem;
+}
+
+.contentPublikasi {
+    display: flex;
+    justify-content: center;
+}
+
+.contentPublikasi .magazine iframe {
+    height: 87em;
+    width: 39em;
+    margin-top: 7rem;
+}
+
+.content-publikasi {
+    padding: 3rem;
+    margin: 4rem;
+    display: grid;
+}
+
+.content-publikasi .yt {
+    margin-bottom: 6rem;
+    margin-left: -4rem;
+}
+
+.content-publikasi .yt h1 {
+    font-size: 30px;
+    margin-top: 1rem;
+    font-weight: 650;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+/*PAGE JADWAL EVENT////////////*/
+/*======= HERO ===========*/
+.hero-event {
+    padding: 20px;
+    background: linear-gradient(rgb(25, 95, 122), rgb(75, 175, 214));
+    width: auto;
+    height: 95vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-event .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.hero-event .item h1 {
+    text-align: end;
+    font-size: 8rem;
+    font-family: Poppins;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: whitesmoke;
+    margin-top: 5rem;
+    z-index: 1;
+    margin-top: 10rem;
+}
+
+.hero-event .item img {
+    width: 600px;
+    height: 530px;
+    margin-top: 7rem;
+}
+
+/*======= HERO FINISH ===========*/
+
+.jadwalEvent {
+    padding: 3rem;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.plnMobile {
+    margin: 4rem;
+}
+
+.plnMobile div {
+    background-color: #ACB3F6;
+    width: 860px;
+    padding: 3rem;
+    text-align: start;
+    border-radius: 25px;
+    transform: translate(50%);
+}
+
+.plnMobile div p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.plnMobile h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color:rgb(39, 6, 82);
+    transform: translate(17%);
+    text-decoration: underline;
+}
+
+.plnMobile .btn {
+    padding: 7px 23px;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: rgb(39, 6, 82);
+    transform: scale(0.9);
+    transition: all .4s ease-in-out;
+}
+
+.plnMobile .btn:hover {
+    transform: scale(1);
+    filter: drop-shadow(2px 4px 0px rgb(240, 240, 240));
+}
+
+
+/*PAGE ABOUT////////////*/
+.hero-about {
+    padding: 20px;
+    background: linear-gradient(rgb(25, 95, 122), rgb(75, 175, 214));
+    width: auto;
+    height: 95vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-about .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.hero-about .item h1 {
+    text-align: center;
+    font-size: 7rem;
+    font-family: Poppins;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: whitesmoke;
+    margin-top: 4rem;
+    z-index: 1;
+    margin-top: 10rem;
+}
+
+.hero-about .item img {
+    width: 500px;
+    height: 460px;
+    margin-top: 10rem;
+}
+
+.webDev {
+    display: flex;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.webDev .child {
+    margin: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: rgb(39, 6, 82);
+}
+
+.webDev .child img {
+    width: 500px;
+}
+
+.webDev .child p {
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.webDev .child h1 {
+    font-family: Poppins;
+    margin-top: 1.8rem;
+}
+
+/*======= FINISH ========*/
+
+
+
+
+
+
+/****************************************** FOOTER ******************************************/
+
+footer {
+    padding: 3rem;
+    background: linear-gradient(135deg, rgb(75, 175, 214), rgb(25, 95, 122));
+}
+
+footer .content1 h3 {
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform: translateX(25%);
+    width: 50%;
+    padding: 4px 20px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+footer .content1 {
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .child {
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+}
+
+footer .list-sitemap {
+    list-style: none; 
+}
+
+footer .list-sitemap li {
+    margin-top: 1.21rem;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+footer .list-sitemap li i {
+    margin-right: 0.5rem;
+}
+
+footer .sosmed-follow {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+footer .sosmed-follow i {
+    font-size: 25px;
+    color: yellow;
+}
+
+footer .content2 h4 {
+    font-family: Poppins;
+    color: whitesmoke;
+    margin-top: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+footer .content2 {
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content2 h3 {
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 4rem;
+    width: 36.3%;
+    padding: 4px 10px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+.cs-me {
+    padding: 2rem;
+    text-align: center;
+    background-color: violet;
+    color: whitesmoke;
+    height: max-content;
+    margin-top: 3rem;
+    background-color: var(--thread-color);
+    border-radius: 0 30%;
+}
+
+.cs-me h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.1rem;
+}
+
+.cs-me span {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: yellow;
+}
+
+/****************************************** FOOTER FINISH ******************************************/
+/****************************************** FOOTER FINISH ******************************************/
+/****************************************** FOOTER FINISH ******************************************/
+
+
+
+/****************************************** Responsive max-480 (Handphone) ******************************************/
+/*=========================================================================================================================*/
+
+/*==================== Navbar ====================*/
+
+
+
+
+
+/*==================== LANDING PAGE ====================*/
+/************ Hero =============*/
+
+@media screen and (max-width: 480px) {
+
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .list__iconMenu .list_UP3 a {
+        font-size: 14px;
+    }
+
+    .list__iconMenu .list_ULP a {
+        font-size: 14px;
+    }
+
+    .hero img {
+        height: 70vh;
+    }
+
+    .text-hero {
+        transform: translateX(2%);
+    }
+
+    .text-hero h1 {
+        font-size: 3.4rem;
+    }
+
+    .tbl .more, 
+    .tbl .about {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    header {
+        position: relative;
+        width: 90.2%;
+    }
+
+    header .logo {
+        margin-left: -5rem;
+    }
+
+    header .logo img {
+        width: 280px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        transform: translate(20rem, -110%);
+    }
+
+    .profile {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile img {
+        width: 12em;
+    }
+
+    .profile div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile div p {
+        font-size: 18px;
+    }
+
+    .profile div h4 {
+        text-align: center;
+    }
+
+    .grid-home .box {
+        display: grid;
+    }
+
+    .wilker {
+        margin-top: 3rem;
+    }
+
+    .wilker h1 {
+        font-size: 26px;
+        padding: 1.02rem;
+    }
+    
+    .wilker img {
+        width: 22em;
+        margin-top: 1.2rem;
+    }
+
+    .content-yt {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .text-media {
+        font-size: 2.4rem;
+        text-align: center;
+        transform: translateX(-17%);
+    }
+
+    .content-yt div {
+        display: block;
+    }
+
+    .content-yt div .text {
+        padding: 0;
+    }
+
+    .content-yt iframe {
+        width: 320px;
+        height: 170px;
+    }
+
+    .content-yt div .text h1 {
+        font-size: 29px;
+    }
+
+    .content-yt div .text p {
+        font-size: 16px;
+    }
+
+    .cs-me {
+        position: absolute;
+        transform: translate(50%, 160%);
+        height: 14px;
+    }
+
+    .cs-me h1 {
+        font-size: 12px;
+        display: flex;
+        margin-top: -1.3rem;
+    }
+
+    .cs-me span {
+        font-size: 14px;
+    }
+
+    footer .list-sitemap li {
+        font-size: 7px;
+    }
+
+    footer .content1 h3 {
+        font-size: 9px;
+    }
+
+    footer .content2 h3 {
+        font-size: 9px;
+        margin-left: 2rem;
+    }
+
+    footer .content2 h4 {
+        font-size: 8px;
+    }
+
+    footer .sosmed-follow i {
+        font-size: 18px;
+    }
+
+
+    
+    /*///////////////////// Event ////////////////////////////*/
+
+    .hero-event .item h1 {
+        font-size: 3rem;
+        position: absolute;
+        top: 6.7em;
+        left: 6rem;
+        text-align: center;
+    }
+
+    .hero-event .item {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-event .item img {
+        width: 380px;
+        height: 350px;
+        position: absolute;
+        top: 1rem;
+        left: 1.2rem;
+    }
+
+    .hero-event {
+        height: 63.5vh;
+    }
+
+
+    
+
+    
+    /*///////////////////// Kinerja SBU ////////////////////////////*/
+
+    .hero-kinerja .item h1 {
+        font-size: 3rem;
+        position: absolute;
+        top: 6.7em;
+        left: 6rem;
+        text-align: center;
+    }
+
+    .hero-kinerja .item {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-kinerja .item img {
+        width: 340px;
+        height: 250px;
+        position: absolute;
+        top: 1rem;
+        left: 2.2rem;
+    }
+
+    .hero-kinerja {
+        height: 63.5vh;
+    }
+
+    /*///////////////////// Publikasi ////////////////////////////*/
+
+    .hero-publikasi .item h1 {
+        font-size: 3rem;
+        position: absolute;
+        top: 6.7em;
+        left: 4.5rem;
+        text-align: center;
+    }
+
+    .hero-publikasi .item {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-publikasi .item img {
+        width: 340px;
+        height: 250px;
+        position: absolute;
+        top: 1rem;
+        left: 2.2rem;
+    }
+
+    .hero-publikasi {
+        height: 63.5vh;
+    }
+
+    .pubilkasi-nav {
+        display: block;
+    }
+
+    .pubilkasi-nav .item {
+        margin-top: 4rem;
+    }
+
+    .pubilkasi-nav .item img {
+        width: 12em;
+    }
+
+    .contentPublikasi {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contentPublikasi .yt iframe {
+        width: 20em;
+        height: 11em;
+    }
+
+    .contentPublikasi .yt h1 {
+        font-size: 1.2rem;
+    }
+
+    .contentPublikasi .magazine iframe {
+        width: 20em;
+        height: 30em;
+        margin-top: -3rem;
+        position: relative;
+        transform: translateX(13%);
+    }
+
+    .contentPublikasi .magazine {
+        margin-bottom: 5rem;
+    }
+
+    /*///////////////////// About ////////////////////////////*/
+
+    .hero-about .item h1 {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 8.5em;
+        left: 3rem;
+    }
+
+    .hero-about .item {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-about .item img {
+        width: 340px;
+        height: 300px;
+        position: absolute;
+        top: 1rem;
+        left: 2.2rem;
+    }
+
+    .hero-about {
+        height: 63.5vh;
+    }
+
+    .webDev {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .webDev .child img {
+        width: 20em;
+        transform: translateX(-21%);
+    }
+
+    .webDev .child {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+}

@@ -1,0 +1,2207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color : rgb(49, 135, 168);
+    --secondary-color :whitesmoke;
+    --thread-color : rgb(25, 95, 122);
+}
+
+
+nav {
+    background: linear-gradient(135deg, rgb(25, 95, 122), rgb(75, 175, 214));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 6rem;
+}
+
+header {
+    padding: 20px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 340px;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li:hover {
+    background-color: var(--thread-color);
+
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.sosmed-nav {
+    display: flex;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.sosmed-nav i {
+    margin: 0 9px;
+    cursor: pointer;
+    transition: .2s;
+    color:  var(--secondary-color);
+}
+
+.sosmed-nav i:hover {
+    color: var(--primary-color);
+}
+
+
+.dropdown .btn i {
+    margin-left: 0.4rem;
+    z-index: 2;
+}
+
+
+.dropbtn {
+    background-color: var(--secondary-color);
+    color: var(--thread-color);
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: rgb(220, 218, 224)}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: var(--thread-color); color: whitesmoke;}
+
+
+.hamburger {
+    font-size: 30px;
+    color: var(--thread-color);
+    display: none;
+}
+
+
+.list__iconMenu {
+    background-color: white;
+    position: fixed;
+    min-width: 100%;
+    text-align: center;
+    z-index: 2;
+    display: none;
+} 
+
+.active.list__iconMenu {
+    display: block;
+}
+
+.list__iconMenu i {
+    margin-left: 0.5rem;
+}
+
+.list__iconMenu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+.list__iconMenu .list_UP3 a {
+    font-size: 16px;
+}
+
+.list__iconMenu .list_UP3 {
+    display: none;
+}
+
+.dropdown-UP3 {
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--thread-color);
+}
+
+.list_UP3 {
+    display: none;
+}
+
+.active.list_UP3 {
+    display: block;
+}
+
+
+
+.list__iconMenu .list_ULP a {
+    font-size: 16px;
+}
+
+.list__iconMenu .list_ULP {
+    display: none;
+}
+
+.dropdown-ULP {
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--thread-color);
+}
+
+.list_ULP {
+    display: none;
+}
+
+.active.list_ULP {
+    display: block;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 90.2%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .list__iconMenu {
+        max-width: 100%;
+    }
+
+    .list__iconMenu .list_UP3 a {
+        font-size: 14px;
+    }
+
+    .list__iconMenu .list_ULP a {
+        font-size: 14px;
+    }
+
+    header .logo {
+        margin-left: -5rem;
+    }
+
+    header .logo img {
+        width: 280px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        transform: translate(20rem, -110%);
+    }
+}
+
+
+
+
+
+/*====================================================================================*/
+/*=================================== PERENCANAAN ====================================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-perencanaan img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-perencanaan .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-perencanaan .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 14rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-perencanaan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-perencanaan img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-perencanaan div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-perencanaan div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-perencanaan div p {
+    font-size: 16px;
+}
+
+.profile-perencanaan div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-perencanaan div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-perencanaan {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-perencanaan .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-perencanaan .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-perencanaan .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-perencanaan .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__perencanaan {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__perencanaan h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__perencanaan h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__perencanaan a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-perencanaan .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-perencanaan .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-290%);
+    }
+    
+    .profile-perencanaan {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-perencanaan img {
+        width: 12em;
+    }
+
+    .profile-perencanaan div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-perencanaan div p {
+        font-size: 18px;
+    }
+
+    .profile-perencanaan div h4 {
+        text-align: center;
+    }
+
+    .grid-perencanaan {
+        text-align: center;
+    }
+
+    .grid-perencanaan .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-perencanaan .box div {
+        transform: translateX(-16%);
+    }
+    
+}
+
+
+
+/*============================== PERENCANAAN FINISH ==================================*/
+
+
+
+
+/*====================================================================================*/
+/*==================================== KONSTRUKSI ====================================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-konstruksi img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-konstruksi .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-konstruksi .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 14rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-konstruksi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-konstruksi img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-konstruksi div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-konstruksi div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-konstruksi div p {
+    font-size: 16px;
+}
+
+.profile-konstruksi div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-konstruksi div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-konstruksi {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-konstruksi .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-konstruksi .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-konstruksi .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-konstruksi .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__konstruksi {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__konstruksi h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__konstruksi h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__konstruksi a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-konstruksi .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-konstruksi .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-290%);
+    }
+    
+    .profile-konstruksi {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-konstruksi img {
+        width: 12em;
+    }
+
+    .profile-konstruksi div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-konstruksi div p {
+        font-size: 18px;
+    }
+
+    .profile-konstruksi div h4 {
+        text-align: center;
+    }
+
+    .grid-konstruksi {
+        text-align: center;
+    }
+
+    .grid-konstruksi .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-konstruksi .box div {
+        transform: translateX(-16%);
+    }
+    
+}
+
+/*==================================== KONSTRUKSI FINISH ====================================*/
+
+
+/*====================================================================================*/
+/*============================== TRANSAKSI ENERGI LISTRIK ============================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-transListrik img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-transListrik .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-transListrik .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 11rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-transListrik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-transListrik img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-transListrik div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-transListrik div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-transListrik div p {
+    font-size: 16px;
+}
+
+.profile-transListrik div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-transListrik div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-transListrik {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-transListrik .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-transListrik .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-transListrik .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-transListrik .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__transListrik {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__transListrik h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__transListrik h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__transListrik a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-transListrik .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-transListrik .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-144%);
+    }
+    
+    .profile-transListrik {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-transListrik img {
+        width: 12em;
+    }
+
+    .profile-transListrik div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-transListrik div p {
+        font-size: 18px;
+    }
+
+    .profile-transListrik div h4 {
+        text-align: center;
+    }
+
+    .grid-transListrik {
+        text-align: center;
+    }
+
+    .grid-transListrik .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-transListrik .box div {
+        transform: translateX(-16%);
+    }
+}
+
+/*==================================== TRANSAKSI ENERGI LISTRIK FINISH ====================================*/
+
+
+
+/*====================================================================================*/
+/*===================================== JARINGAN =====================================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-jaringan img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-jaringan .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-jaringan .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 14rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-jaringan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-jaringan img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-jaringan div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-jaringan div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-jaringan div p {
+    font-size: 16px;
+}
+
+.profile-jaringan div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-jaringan div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-jaringan {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-jaringan .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-jaringan .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-jaringan .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-jaringan .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__jaringan {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__jaringan h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__jaringan h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__jaringan a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-jaringan .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-jaringan .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-290%);
+    }
+    
+    .profile-jaringan {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-jaringan img {
+        width: 12em;
+    }
+
+    .profile-jaringan div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-jaringan div p {
+        font-size: 18px;
+    }
+
+    .profile-jaringan div h4 {
+        text-align: center;
+    }
+
+    .grid-jaringan {
+        text-align: center;
+    }
+
+    .grid-jaringan .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-jaringan .box div {
+        transform: translateX(-16%);
+    }
+}
+
+/*==================================== JARINGAN FINISH ====================================*/
+
+
+
+/*====================================================================================*/
+/*========================= PEMASARAN DAN PELAYANAN PELANGGAN ========================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-PPP img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-PPP .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-PPP .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 11rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-PPP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-PPP img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-PPP div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-PPP div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-PPP div p {
+    font-size: 16px;
+}
+
+.profile-PPP div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-PPP div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-PPP {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-PPP .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-PPP .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-PPP .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-PPP .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__PPP {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__PPP h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__PPP h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__PPP a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-PPP .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-PPP .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-96%);
+    }
+    
+    .profile-PPP {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-PPP img {
+        width: 12em;
+    }
+
+    .profile-PPP div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-PPP div p {
+        font-size: 18px;
+    }
+
+    .profile-PPP div h4 {
+        text-align: center;
+    }
+
+    .grid-PPP {
+        text-align: center;
+    }
+
+    .grid-PPP .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-PPP .box div {
+        transform: translateX(-16%);
+    }
+    
+}
+
+
+/*==================================== PEMASARAN DAN PELAYANAN PELANGGAN (FINISH) ====================================*/
+
+
+/*====================================================================================*/
+/*================================= KEUANGAN DAN UMUM ================================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-keuangan img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-keuangan .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-keuangan .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 11rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-keuangan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-keuangan img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-keuangan div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-keuangan div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-keuangan div p {
+    font-size: 16px;
+}
+
+.profile-keuangan div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-keuangan div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-keuangan {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-keuangan .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-keuangan .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-keuangan .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-keuangan .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__keuangan {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__keuangan h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__keuangan h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__keuangan a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-keuangan .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-keuangan .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-144%);
+    }
+    
+    .profile-keuangan {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-keuangan img {
+        width: 12em;
+    }
+
+    .profile-keuangan div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-keuangan div p {
+        font-size: 18px;
+    }
+
+    .profile-keuangan div h4 {
+        text-align: center;
+    }
+
+    .grid-keuangan {
+        text-align: center;
+    }
+
+    .grid-keuangan .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-keuangan .box div {
+        transform: translateX(-16%);
+    }
+}
+
+/*==================================== KEUANGAN DAN UMUM (FINISH) ====================================*/
+
+
+
+/*====================================================================================*/
+/*==================================== PENGADAAN =====================================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-pengadaan img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-pengadaan .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-pengadaan .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 14rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-pengadaan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-pengadaan img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-pengadaan div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-pengadaan div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-pengadaan div p {
+    font-size: 16px;
+}
+
+.profile-pengadaan div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-pengadaan div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-pengadaan {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-pengadaan .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-pengadaan .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-pengadaan .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-pengadaan .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__pengadaan {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__pengadaan h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__pengadaan h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__pengadaan a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero-pengadaan .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-pengadaan .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-290%);
+    }
+    
+    .profile-pengadaan {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-pengadaan img {
+        width: 12em;
+    }
+
+    .profile-pengadaan div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-pengadaan div p {
+        font-size: 18px;
+    }
+
+    .profile-pengadaan div h4 {
+        text-align: center;
+    }
+
+    .grid-pengadaan {
+        text-align: center;
+    }
+
+    .grid-pengadaan .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-pengadaan .box div {
+        transform: translateX(-16%);
+    }
+}
+
+/*==================================== PENGADAAN (FINISH) ====================================*/
+
+
+
+/*====================================================================================*/
+/*======================================== K3 ========================================*/
+/*====================================================================================*/
+
+/*********** HERO *******************/
+.hero-K3 img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-K3 .text-hero {
+    padding: 7rem 0;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    background: url('../asset/img44.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72vh;
+    left: 3rem;
+}
+
+.hero-K3 .text-hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
+    font-family: Poppins;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 14rem;
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** PROFILE *******************/
+
+.profile-K3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 6rem;
+}
+
+.profile-K3 img {
+    width: 20em;
+    height: auto;
+    border: 8px;
+    border-radius: 30px;
+}
+
+.profile-K3 div {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    color: var(--thread-color);
+}
+
+
+.profile-K3 div h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-K3 div p {
+    font-size: 16px;
+}
+
+.profile-K3 div p span {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.profile-K3 div h4 {
+   font-size: 16px;
+   margin-top: 3rem;
+   text-align: right;
+   
+}
+
+/*********** SELESAI *******************/
+
+
+/*********** FOTO ANGGOTA *******************/
+
+.grid-K3 {
+    width: auto;
+    padding: 5rem;
+    position: relative;
+}
+.grid-K3 .box {
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+}
+
+.grid-K3 .box img {
+    width: 250px;
+    margin: 40px;
+    border-radius: 40px;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-K3 .box img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+}
+
+.grid-K3 .box h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thread-color);
+    margin-top: -1rem;
+}
+
+
+/*********** SELESAI *******************/
+
+
+/*********** LINK MONITORING *******************/
+
+.link__K3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.link__K3 h3 {
+    background-color: transparent;
+    width: 50%;
+    transform: translateX(50%);
+    border: 2px solid var(--thread-color);
+    margin-top: 1rem;
+    color: var(--thread-color);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    transition: .1s;
+}
+
+.link__K3 h3:hover {
+    background-color: var(--thread-color);
+    color: whitesmoke;
+}
+
+.link__K3 a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero-K3 .text-hero {
+        height: 10vh;
+    }
+    
+    .hero-K3 .text-hero h1 {
+        font-size: 3rem;
+        transform: translateY(-290%);
+    }
+    
+    .profile-K3 {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .profile-K3 img {
+        width: 12em;
+    }
+
+    .profile-K3 div h1 {
+        font-size: 46px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .profile-K3 div p {
+        font-size: 18px;
+    }
+
+    .profile-K3 div h4 {
+        text-align: center;
+    }
+
+    .grid-K3 {
+        text-align: center;
+    }
+
+    .grid-K3 .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-K3 .box div {
+        transform: translateX(-16%);
+    }
+}
+
+/*==================================== K3 (FINISH) ====================================*/
+
+
+
+
+/********************************* FOOTER ****************************************/
+/********************************* FOOTER ****************************************/
+/********************************* FOOTER ****************************************/
+
+footer {
+    padding: 3rem;
+    background: linear-gradient(135deg, rgb(75, 175, 214), rgb(25, 95, 122));
+}
+
+footer .content1 h3 {
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform: translateX(25%);
+    width: 50%;
+    padding: 4px 20px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+footer .content1 {
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .child {
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+}
+
+footer .icon-sitemap {
+    margin-right: 0.7rem;
+}
+
+footer .icon-sitemap div {
+    margin-top: 1.25rem;
+}
+
+footer .list-sitemap li i {
+    margin-right: 0.5rem;
+}
+
+footer .list-sitemap {
+    list-style: none; 
+}
+
+footer .list-sitemap li {
+    margin-top: 1.21rem;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+footer .sosmed-follow {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+footer .sosmed-follow i {
+    font-size: 25px;
+    color: yellow;
+}
+
+footer .content2 h4 {
+    font-family: Poppins;
+    color: whitesmoke;
+    margin-top: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+footer .content2 {
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content2 h3 {
+    color: whitesmoke;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 4rem;
+    width: 36.3%;
+    padding: 4px 10px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+.cs-me {
+    padding: 2rem;
+    text-align: center;
+    background-color: violet;
+    color: whitesmoke;
+    height: max-content;
+    margin-top: 3rem;
+    background-color: var(--thread-color);
+    border-radius: 0 30%;
+}
+
+.cs-me h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.1rem;
+}
+
+.cs-me span {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: yellow;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .cs-me {
+        position: absolute;
+        transform: translate(50%, 160%);
+        height: 14px;
+    }
+
+    .cs-me h1 {
+        font-size: 12px;
+        display: flex;
+        margin-top: -1.3rem;
+    }
+
+    .cs-me span {
+        font-size: 14px;
+    }
+
+    footer .list-sitemap li {
+        font-size: 7px;
+    }
+
+    footer .content1 h3 {
+        font-size: 9px;
+    }
+
+    footer .content2 h3 {
+        font-size: 9px;
+        margin-left: 2rem;
+    }
+
+    footer .content2 h4 {
+        font-size: 8px;
+    }
+
+    footer .sosmed-follow i {
+        font-size: 18px;
+    }
+
+}
